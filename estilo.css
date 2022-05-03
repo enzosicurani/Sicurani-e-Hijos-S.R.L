@@ -31,7 +31,6 @@ nav a {
 }
 body {
     background-color: #141414;
-    background-size: contain;
     font-family: Corporate A BQ Light,Open sans,sans-serif;
     color: white;
 }
@@ -104,7 +103,7 @@ footer {
     color: white;
     background-color: black;
     padding: 30px;
-    margin: auto;
+    margin: 0px;
     grid-area: footer;
     background: black;
     font-family: Corporate A BQ Light,Open sans,sans-serif;
@@ -310,6 +309,10 @@ h3 {
 .infodecontacto {
     padding: 10px;
     margin: 20px;
+    grid-area: infodecontacto;
+}
+.formulario {
+    grid-area: formulario;
 }
 .infocontacto {
     font-size: 15px;
@@ -318,4 +321,14 @@ h3 {
 h4 {
     font-size: 20px;
     text-align: center ;
+}
+.contenedorcontacto {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "infodecontacto formulario formulario"
+    "infodecontacto formulario formulario"
+    "footer footer footer";     
+    align-items: stretch;
+ 
 }
