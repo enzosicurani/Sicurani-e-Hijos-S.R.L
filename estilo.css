@@ -27,7 +27,6 @@ nav a {
     text-decoration: none;
     margin-inline: 10px;
     color:aliceblue;
-    font-family: Open Sans,sans-serif; 
 }
 body {
     background-color: #141414;
@@ -132,11 +131,6 @@ h2 {
    
     font-size: 30px;
     text-align: center;
-}
-h3 { 
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
 }
 .info {
     font-size: 30px;

@@ -1,0 +1,31 @@
+.grid {
+    display: grid ;
+    grid-template-areas:
+    "header header header"
+    "mbgrid mbgrid turnomb"
+    "mbgrid mbrid turnomb"
+    "consejosmb consejosmb consejosmb"
+    "footer footer footer";
+    align-content: stretch;
+
+    .mbgrid {
+        grid-area: mbgrid;
+        background:black;
+        .turnomb {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            grid-area: turno;
+            background: black;
+            .consejosmb {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+                grid-area: consejos;
+                background: black;
+            }
+        }
+    }
+}

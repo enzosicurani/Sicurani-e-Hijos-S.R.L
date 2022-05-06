@@ -1,0 +1,54 @@
+footer {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+    padding: 30px;
+    margin: 0px;
+    grid-area: footer;
+    background: black;
+    font-family: Corporate A BQ Light,Open sans,sans-serif;
+
+    ul {
+        list-style-type: none;
+
+        .direccion{
+            text-align: right;
+            text-transform: capitalize;
+            font-size: 15px;
+        
+    
+            .empresa {       
+                text-transform: capitalize;
+                font-size: 40px;
+                padding: 15px;
+                margin: 15px;    
+    
+                h3 {
+                    text-align: center;
+                    font-size: 20px;
+                    
+                    h2 {
+                    
+                        font-size: 30px;
+                        text-align: center;
+                    
+                        .info {
+                            font-size: 30px;
+                            text-align: center;
+                            text-decoration: none;
+        
+                            .info2 {
+                                
+                                font-size: 20px;
+                                text-align: center;
+                                text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }                

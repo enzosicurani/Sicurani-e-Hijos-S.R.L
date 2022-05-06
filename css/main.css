@@ -1,0 +1,92 @@
+header {
+  grid-area: header;
+  background-color: black;
+  background-size: 40%;
+  padding: 20px;
+  margin: 0%;
+  font-family: Corporate A BQ Light,Open sans,sans-serif; }
+  header .direccion {
+    text-align: right;
+    text-transform: capitalize;
+    font-size: 15px; }
+    header .direccion .empresa {
+      text-transform: capitalize;
+      font-size: 40px;
+      padding: 15px;
+      margin: 15px; }
+      header .direccion .empresa nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-size: 2rem;
+        color: #141414;
+        flex-flow: wrap; }
+        header .direccion .empresa nav a {
+          text-decoration: none;
+          margin-inline: 10px;
+          color: aliceblue; }
+/*grids*/
+.grid {
+  display: grid;
+  grid-template-areas: "header header header"
+ "mbgrid mbgrid turnomb"
+ "mbgrid mbrid turnomb"
+ "consejosmb consejosmb consejosmb"
+ "footer footer footer";
+  align-content: stretch; }
+  .grid .mbgrid {
+    grid-area: mbgrid;
+    background: black; }
+    .grid .mbgrid .turnomb {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      grid-area: turno;
+      background: black; }
+      .grid .mbgrid .turnomb .consejosmb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        grid-area: consejos;
+        background: black; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+  padding: 30px;
+  margin: 0px;
+  grid-area: footer;
+  background: black;
+  font-family: Corporate A BQ Light,Open sans,sans-serif; }
+  footer ul {
+    list-style-type: none; }
+    footer ul .direccion {
+      text-align: right;
+      text-transform: capitalize;
+      font-size: 15px; }
+      footer ul .direccion .empresa {
+        text-transform: capitalize;
+        font-size: 40px;
+        padding: 15px;
+        margin: 15px; }
+        footer ul .direccion .empresa h3 {
+          text-align: center;
+          font-size: 20px; }
+          footer ul .direccion .empresa h3 h2 {
+            font-size: 30px;
+            text-align: center; }
+            footer ul .direccion .empresa h3 h2 .info {
+              font-size: 30px;
+              text-align: center;
+              text-decoration: none; }
+              footer ul .direccion .empresa h3 h2 .info .info2 {
+                font-size: 20px;
+                text-align: center;
+                text-decoration: none; }
