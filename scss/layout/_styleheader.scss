@@ -1,0 +1,26 @@
+header {
+    grid-area: header;
+    background-color: black;
+    background-size: 40%; 
+    padding: 20px;
+    margin: 0%;
+    font-family: Corporate A BQ Light,Open sans,sans-serif;
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-size: 2rem;
+        color: #141414;
+        flex-flow: wrap;
+        nav {
+                a {
+            text-decoration: none;
+            margin-inline: 10px;
+            color:aliceblue;
+            font-family: Open Sans,sans-serif; 
+            }
+        }
+    }
+}
