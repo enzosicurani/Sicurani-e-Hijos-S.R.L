@@ -329,6 +329,41 @@ h4 {
     "infodecontacto formulario formulario"
     "infodecontacto formulario formulario"
     "footer footer footer";     
-    align-items: stretch;
- 
+    align-items: stretch; 
+}
+@media (max-width: 768px) {
+    .grid {
+    grid-template-areas:
+    "header header header"
+    "infodecontacto formulario formulario"
+    "infodecontacto formulario formulario"
+    "footer footer footer";
+    }
+    .infodecontacto {
+        flex-wrap: wrap;
+    }
+    .formulario{
+        flex-wrap: wrap;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 368px) {
+    .grid {
+    grid-template-areas
+    :"header header header"
+    "infodecontacto formulario formulario"
+    "infodecontacto formulario formulario"
+    "footer footer footer"
+    }
+    .infodecontacto {
+        flex-wrap: wrap;
+    }
+    .formulario{
+        flex-wrap: wrap;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
 }
