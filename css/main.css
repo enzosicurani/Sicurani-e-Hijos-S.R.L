@@ -27,14 +27,10 @@ header {
           text-decoration: none;
           margin-inline: 10px;
           color: aliceblue; }
-/*grids*/
+
 .grid {
   display: grid;
-  grid-template-areas: "header header header"
- "mbgrid mbgrid turnomb"
- "mbgrid mbrid turnomb"
- "consejosmb consejosmb consejosmb"
- "footer footer footer";
+  grid-template-areas: "header header header" "mbgrid mbgrid turnomb" "mbgrid mbrid turnomb" "consejosmb consejosmb consejosmb" "footer footer footer";
   align-content: stretch; }
   .grid .mbgrid {
     grid-area: mbgrid;
@@ -90,3 +86,39 @@ footer {
                 font-size: 20px;
                 text-align: center;
                 text-decoration: none; }
+
+.profiles-link--facebook:hover {
+  background-color: #141414; }
+
+.profiles-link--instagram:hover {
+  background-color: #141414; }
+
+.imagenes-1 {
+  width: 2em; }
+
+.imagenes-2 {
+  width: 4em; }
+
+.imagenes-3 {
+  width: 6em; }
+
+.imagenes-4 {
+  width: 8em; }
+
+.imagenes-5 {
+  width: 10em; }
+
+.imagenes-6 {
+  width: 12em; }
+
+.imagenes-7 {
+  width: 14em; }
+
+.imagenes-8 {
+  width: 16em; }
+
+.imagenes-9 {
+  width: 18em; }
+
+.imagenes-10 {
+  width: 20em; }

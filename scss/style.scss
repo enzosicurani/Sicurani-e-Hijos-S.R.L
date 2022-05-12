@@ -6,3 +6,38 @@
 
 @import "layout/stylefooter";
 
+
+@mixin titulos ($size){
+    h1 {  
+        font-size: 40px;  
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+         ;
+    }
+}
+@mixin textos ($font-size, $text-transform, $text-aling ){
+    font-size: $font-size;
+    text-align: $text-aling;
+    text-transform: $text-transform;
+}
+$profiles: (
+    facebook:  #141414,
+    instagram: #141414,
+);
+
+@each $profiles, $bgcolor in $profiles {
+    .profiles-link--#{$profiles}:hover {
+       background-color: $bgcolor;
+       
+    }
+}
+@for $i from 1 through 10 {
+    .imagenes-#{$i} { width: 2em * $i; }
+  }

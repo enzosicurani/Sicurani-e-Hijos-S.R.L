@@ -116,7 +116,7 @@ ul {
     font-size: 15px;
 }
     
-.empresa {
+h1 {
  
     text-transform: capitalize;
     font-size: 40px;
@@ -209,12 +209,10 @@ h2 {
 .insta {
         height: 30px;
         width: 30px;   
-
 }
 .face {
     height: 30px;
     width: 30px;  
-
 }
 /*body mb*/
 
