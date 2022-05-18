@@ -11,7 +11,7 @@ header {
     background-size: 40%; 
     padding: 20px;
     margin: 0%;
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
+    font-family:  Corporate A BQ Light,Open sans,sans-serif;
 }
 nav {
     width: 100%;
@@ -22,6 +22,7 @@ nav {
     font-size: 2rem;
     color: #141414;
     flex-flow: wrap;
+    font-family: Open sans,sans-serif ;
 }
 nav a {
     text-decoration: none;
@@ -30,7 +31,7 @@ nav a {
 }
 body {
     background-color: #141414;
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
+    font-family: Open sans,sans-serif;
     color: white;
 }
 .grid {
@@ -42,9 +43,6 @@ body {
     "consejosmb consejosmb consejosmb"
     "footer footer footer";
     align-content: stretch;
-    margin: 10px;
-
-
 }
 .marcas {
     text-align: center;
@@ -52,13 +50,15 @@ body {
     align-self: center;
     padding: 20px;
     box-shadow: #141414;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 15px;
     text-decoration: none;
 }
 .mbgrid {
     grid-area: mbgrid;
     background:black;
+    margin: 20px;
+    padding: 20px;
 }
 .turno {
     text-align: center;
@@ -67,7 +67,7 @@ body {
     align-self: center;
     padding: 20px;
     box-shadow: #141414;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 15px;
 }
 .turnomb {
@@ -84,7 +84,7 @@ body {
     justify-content: center;
     align-self: center;
     padding: 20px;
-    box-shadow: #141414;
+    box-shadow: black;
     font-size: 3rem;
     margin: 15px;
 }
@@ -94,6 +94,7 @@ body {
     justify-content: center;
     padding: 20px;
     grid-area: consejos;
+    font-size: 2rem;
     background: black;
 }
 footer {
@@ -106,7 +107,7 @@ footer {
     margin: 0px;
     grid-area: footer;
     background: black;
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
+    font-family: Open sans,sans-serif;
 }
 ul {
     list-style-type: none;
@@ -144,69 +145,150 @@ h2 {
     text-align: center;
     text-decoration: none;
 }
+
+/* mercedesb*/
+.contenedormb{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "postventas postventas vansgrid"
+    "autosgrid autosbrid vansgrid"
+    "camionesgrid camionesgrid camionesgrid"
+    "footer footer footer";
+    align-content: stretch;
+}
+.unidades {
+    text-align: center;
+    width: 1300px;;
+    align-self: center;
+    padding: 20px;
+    box-shadow: #141414;
+    font-size: 2rem;
+    margin: 15px;
+    
+}
+
+.postventas{
+    grid-area: postventas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+.autosgrid{
+    grid-area: autosgrid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+}
+.vansgrid{
+    grid-area: vansgrid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+.camionesgrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+    grid-area: camionesgrid;
+}
+
+.mejoresmanos {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 100px;  
+    padding: 30px;
+}
+.textomantenimiento {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
 /*imagenes*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.fondoautos {
+    height : 400px;
+    width: 1100px;
+    display: block;
+    margin: 0px auto;
+}
 .c63 {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 
 }
 .sprinter{
-    height: 100%;
-    width: 75%;   
+    height: 450px;
+    width: 900px;   
     display: block;
     margin: 0px auto;
 }
 .cherokee{
-    height: 90%;
-    width: 60%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: auto ;
 }
 .taller {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 }
 .mbs500 {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 }
 .camiones {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 }
 .renegade {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 }
 .compass {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width:900px;
     display: block;
     margin: 0px auto;
 }
 .ram {
-    height: 100%;
-    width: 75%;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 }
 .negocio {
-    height: 50%;
-    width: 25;
+    height: 450px;
+    width: 900px;
     display: block;
     margin: 0px auto;
 }
-/*footer*/
+/*footer img*/
 .insta {
         height: 30px;
         width: 30px;   
@@ -215,26 +297,10 @@ h2 {
     height: 30px;
     width: 30px;  
 }
-/*body mb*/
 
-.mejoresmanos {
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
-    font-size: 30px;
-    text-align: left;
-    margin-left: 100px;  
-    padding: 30px;
-}
-.textomantenimiento {
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-}
 /*bodycontacto*/
 .formulario {
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
+    font-family:Open sans,sans-serif;
     font-size: 30px;
     text-align: left;
     margin-left: 100px;  
@@ -250,12 +316,11 @@ h2 {
     @media (max-width: 768px) {
     .grid {
     grid-template-areas:
-    "header header"
-    "nav nav nav"
-    "mbgrid turno"
-    "mbmopar turno"
-    "consejos consejos"
-    "footer footer";
+    "header header header"
+    "mbgrid mbgrid turnomb"
+    "mbgrid mbrid turnomb"
+    "consejosmb consejosmb consejosmb"
+    "footer footer footer";
     }
     .mbgrid {
         flex-wrap: wrap;
@@ -276,12 +341,11 @@ h2 {
 @media (max-width: 368px) {
     .grid {
     grid-template-areas:
-    "header header"
-    "nav nav nav"
-    "mbgrid turno"
-    "mbmopar turno"
-    "consejos consejos"
-    "footer footer";
+    "header header header"
+    "mbgrid mbgrid turnomb"
+    "mbgrid mbrid turnomb"
+    "consejosmb consejosmb consejosmb"
+    "footer footer footer";
     }
     .mbgrid {
         flex-wrap: wrap;
@@ -299,6 +363,7 @@ h2 {
         flex-wrap: wrap;
     }
 }
+/*pagina contacto*/
 .infodecontacto {
     padding: 10px;
     margin: 20px;
