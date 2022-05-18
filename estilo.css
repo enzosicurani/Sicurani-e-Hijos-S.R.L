@@ -42,6 +42,7 @@ body {
     "consejosmb consejosmb consejosmb"
     "footer footer footer";
     align-content: stretch;
+    margin: 10px;
 
 
 }
@@ -158,10 +159,10 @@ h2 {
     margin: 0px auto;
 }
 .cherokee{
-    height: 100%;
-    width: 75%;
+    height: 90%;
+    width: 60%;
     display: block;
-    margin: 0px auto;
+    margin: auto ;
 }
 .taller {
     height: 100%;
