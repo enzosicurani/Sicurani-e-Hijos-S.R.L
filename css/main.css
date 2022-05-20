@@ -30,7 +30,7 @@ header {
 
 .grid {
   display: grid;
-  grid-template-areas: "header header header" "mbgrid mbgrid turnomb" "mbgrid mbrid turnomb" "consejosmb consejosmb consejosmb" "footer footer footer";
+  grid-template-areas: "header header header" "mbgrid mbgrid turnomb" "mbgrid mbrid turnomb" "consejosmb consejosmb turnomb" "footer footer footer";
   align-content: stretch; }
   .grid .mbgrid {
     grid-area: mbgrid;
@@ -49,6 +49,101 @@ header {
         padding: 20px;
         grid-area: consejos;
         background: black; }
+
+/*gridmercedesebenz*/
+.contenedormb {
+  display: grid;
+  grid-template-areas: "header header header" "postventas postventas vansgrid" "autosgrid autosbrid vansgrid" "camionesgrid camionesgrid camionesgrid" "footer footer footer";
+  align-content: stretch; }
+  .contenedormb .unidades {
+    text-align: center;
+    width: 1300px;
+    align-self: center;
+    padding: 20px;
+    box-shadow: #141414;
+    font-size: 2rem;
+    margin: 15px; }
+    .contenedormb .unidades .postventas {
+      grid-area: postventas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      background: black; }
+      .contenedormb .unidades .postventas .autosgrid {
+        grid-area: autosgrid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background: black; }
+        .contenedormb .unidades .postventas .autosgrid .vansgrid {
+          grid-area: vansgrid;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 20px;
+          background: black; }
+          .contenedormb .unidades .postventas .autosgrid .vansgrid .camionesgrid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            background: black;
+            grid-area: camionesgrid; }
+
+/*gridmopar*/
+.contenedormopar {
+  display: grid;
+  grid-template-areas: "header header header" "consultasgd consultasgd consultasgd" "jeepgd jeepgd dodgegd" "chryslergd chryslergd ramgd" "footer footer footer";
+  align-content: stretch; }
+  .contenedormopar .consultasgd {
+    grid-area: consultasgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black; }
+    .contenedormopar .consultasgd .jeepgd {
+      grid-area: jeepgd;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      background: black; }
+      .contenedormopar .consultasgd .jeepgd .dodgegd {
+        grid-area: dodgegd;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background: black; }
+        .contenedormopar .consultasgd .jeepgd .dodgegd .chryslergd {
+          grid-area: chryslergd;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 20px;
+          background: black; }
+          .contenedormopar .consultasgd .jeepgd .dodgegd .chryslergd .ramgd {
+            grid-area: ramgd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            background: black; }
+
+/*grid conctacto*/
+.contenedorcontacto {
+  display: grid;
+  grid-template-areas: "header header header" "infodecontacto formulario formulario" "infodecontacto formulario formulario" "footer footer footer";
+  align-items: stretch; }
+  .contenedorcontacto .infodecontacto {
+    padding: 10px;
+    margin: 20px;
+    grid-area: infodecontacto; }
+    .contenedorcontacto .infodecontacto .formulario {
+      grid-area: formulario; }
 
 footer {
   display: flex;
@@ -101,24 +196,3 @@ footer {
 
 .imagenes-3 {
   width: 6em; }
-
-.imagenes-4 {
-  width: 8em; }
-
-.imagenes-5 {
-  width: 10em; }
-
-.imagenes-6 {
-  width: 12em; }
-
-.imagenes-7 {
-  width: 14em; }
-
-.imagenes-8 {
-  width: 16em; }
-
-.imagenes-9 {
-  width: 18em; }
-
-.imagenes-10 {
-  width: 20em; }

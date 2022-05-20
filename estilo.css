@@ -215,6 +215,112 @@ h2 {
     margin-right: 100px;
     margin-bottom: 50px;
 }
+
+
+@media (max-width: 768px) {
+    .contenedormb { grid-template-areas: 
+        "header header header"
+        "postventas postventas vansgrid"
+        "autosgrid autosbrid vansgrid"
+        "camionesgrid camionesgrid camionesgrid"
+        "footer footer footer";}
+    .header {
+        flex-wrap: wrap;
+    }
+    .postventas {
+        flex-wrap: wrap;
+    }
+    .autosgrid{
+        flex-wrap: wrap;
+    }
+    .vansgrid{
+        flex-wrap: wrap;
+    }
+    .camionesgrid{
+        flex-wrap: wrap;
+    }
+    .footer {
+        flex-wrap: wrap;
+}
+}
+@media (max-width: 368px) {
+    .contenedormb { grid-template-areas: 
+        "header header header"
+        "postventas postventas vansgrid"
+        "autosgrid autosbrid vansgrid"
+        "camionesgrid camionesgrid camionesgrid"
+        "footer footer footer";}
+    .header {
+        flex-wrap: wrap;
+    }
+    .postventas {
+        flex-wrap: wrap;
+    }
+    .autosgrid{
+        flex-wrap: wrap;
+    }
+    .vansgrid{
+        flex-wrap: wrap;
+    }
+    .camionesgrid{
+        flex-wrap: wrap;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+/*mopar*/
+.contenedormopar {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "consultasgd consultasgd consultasgd"
+    "jeepgd jeepgd dodgegd"
+    "chryslergd chryslergd ramgd"
+    "footer footer footer";
+    align-content: stretch;
+}
+
+.consultasgd{
+    grid-area: consultasgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+.jeepgd{
+    grid-area: jeepgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+.dodgegd{
+    grid-area: dodgegd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+.chryslergd {
+    grid-area: chryslergd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+.ramgd{
+    grid-area: ramgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
 /*imagenes*/
 img {
     max-width: 100%;
@@ -232,59 +338,10 @@ img {
     width: 900px;
     display: block;
     margin: 0px auto;
-
 }
-.sprinter{
-    height: 450px;
-    width: 900px;   
-    display: block;
-    margin: 0px auto;
-}
-.cherokee{
-    height: 450px;
-    width: 900px;
-    display: block;
-    margin: auto ;
-}
-.taller {
-    height: 450px;
-    width: 900px;
-    display: block;
-    margin: 0px auto;
-}
-.mbs500 {
-    height: 450px;
-    width: 900px;
-    display: block;
-    margin: 0px auto;
-}
-.camiones {
-    height: 450px;
-    width: 900px;
-    display: block;
-    margin: 0px auto;
-}
-.renegade {
-    height: 450px;
-    width: 900px;
-    display: block;
-    margin: 0px auto;
-}
-.compass {
-    height: 450px;
-    width:900px;
-    display: block;
-    margin: 0px auto;
-}
-.ram {
-    height: 450px;
-    width: 900px;
-    display: block;
-    margin: 0px auto;
-}
-.negocio {
-    height: 450px;
-    width: 900px;
+.logo {
+    height: 150px;
+    width: 300px;
     display: block;
     margin: 0px auto;
 }
@@ -319,13 +376,13 @@ img {
     "header header header"
     "mbgrid mbgrid turnomb"
     "mbgrid mbrid turnomb"
-    "consejosmb consejosmb consejosmb"
+    "consejosmb consejosmb turnomb"
     "footer footer footer";
     }
-    .mbgrid {
+    .header {
         flex-wrap: wrap;
     }
-    .mopargrid {
+    .mbgrid {
         flex-wrap: wrap;
     }
     .turno {
@@ -344,13 +401,13 @@ img {
     "header header header"
     "mbgrid mbgrid turnomb"
     "mbgrid mbrid turnomb"
-    "consejosmb consejosmb consejosmb"
+    "consejosmb consejosmb turnomb"
     "footer footer footer";
     }
-    .mbgrid {
+    .header {
         flex-wrap: wrap;
     }
-    .mopargrid {
+    .mbgrid {
         flex-wrap: wrap;
     }
     .turno {
@@ -364,14 +421,7 @@ img {
     }
 }
 /*pagina contacto*/
-.infodecontacto {
-    padding: 10px;
-    margin: 20px;
-    grid-area: infodecontacto;
-}
-.formulario {
-    grid-area: formulario;
-}
+
 .infocontacto {
     font-size: 15px;
     text-align: center;
@@ -388,9 +438,16 @@ h4 {
     "infodecontacto formulario formulario"
     "footer footer footer";     
     align-items: stretch; 
+}.infodecontacto {
+    padding: 10px;
+    margin: 20px;
+    grid-area: infodecontacto;
+}
+.formulario {
+    grid-area: formulario;
 }
 @media (max-width: 768px) {
-    .grid {
+    .contenedorcontacto {
     grid-template-areas:
     "header header header"
     "infodecontacto formulario formulario"
@@ -408,7 +465,7 @@ h4 {
     }
 }
 @media (max-width: 368px) {
-    .grid {
+    .contenedorcontacto {
     grid-template-areas
     :"header header header"
     "infodecontacto formulario formulario"

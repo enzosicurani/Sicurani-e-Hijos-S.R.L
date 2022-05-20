@@ -38,6 +38,6 @@ $profiles: (
        
     }
 }
-@for $i from 1 through 10 {
+@for $i from 1 through 3 {
     .imagenes-#{$i} { width: 2em * $i; }
   }

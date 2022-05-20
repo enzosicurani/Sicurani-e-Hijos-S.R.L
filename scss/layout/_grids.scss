@@ -4,7 +4,7 @@
     "header header header"
     "mbgrid mbgrid turnomb"
     "mbgrid mbrid turnomb"
-    "consejosmb consejosmb consejosmb"
+    "consejosmb consejosmb turnomb"
     "footer footer footer";
     align-content: stretch;
 
@@ -29,3 +29,138 @@
         }
     }
 }
+/*gridmercedesebenz*/
+.contenedormb{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "postventas postventas vansgrid"
+    "autosgrid autosbrid vansgrid"
+    "camionesgrid camionesgrid camionesgrid"
+    "footer footer footer";
+    align-content: stretch;
+
+.unidades {
+    text-align: center;
+    width: 1300px;;
+    align-self: center;
+    padding: 20px;
+    box-shadow: #141414;
+    font-size: 2rem;
+    margin: 15px;
+    
+
+.postventas{
+    grid-area: postventas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.autosgrid{
+    grid-area: autosgrid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.vansgrid{
+    grid-area: vansgrid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.camionesgrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+    grid-area: camionesgrid;
+      }
+     }
+    }
+   }
+  }
+ }
+/*gridmopar*/
+.contenedormopar {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "consultasgd consultasgd consultasgd"
+    "jeepgd jeepgd dodgegd"
+    "chryslergd chryslergd ramgd"
+    "footer footer footer";
+    align-content: stretch;
+
+
+.consultasgd{
+    grid-area: consultasgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.jeepgd{
+    grid-area: jeepgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.dodgegd{
+    grid-area: dodgegd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.chryslergd {
+    grid-area: chryslergd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
+.ramgd{
+    grid-area: ramgd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+     }  
+    } 
+   }
+  } 
+ }
+}
+/*grid conctacto*/
+.contenedorcontacto {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "infodecontacto formulario formulario"
+    "infodecontacto formulario formulario"
+    "footer footer footer";     
+    align-items: stretch; 
+.infodecontacto {
+    padding: 10px;
+    margin: 20px;
+    grid-area: infodecontacto;
+
+.formulario {
+    grid-area: formulario;
+  }
+ }
+}
+       
