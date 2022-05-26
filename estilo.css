@@ -197,7 +197,8 @@ h2 {
     "dodge dodge ram"
     "footer footer footer";
     align-content: stretch;
-    display: list-item;
+    display: flex;
+    flex-direction: column;
 }
 
 .consultasgd{
