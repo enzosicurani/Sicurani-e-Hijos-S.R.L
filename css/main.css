@@ -5,50 +5,54 @@ header {
   padding: 20px;
   margin: 0%;
   font-family: Corporate A BQ Light,Open sans,sans-serif; }
-  header .direccion {
-    text-align: right;
-    text-transform: capitalize;
-    font-size: 15px; }
-    header .direccion .empresa {
-      text-transform: capitalize;
-      font-size: 40px;
-      padding: 15px;
-      margin: 15px; }
-      header .direccion .empresa nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        font-size: 2rem;
-        color: #141414;
-        flex-flow: wrap; }
-        header .direccion .empresa nav a {
-          text-decoration: none;
-          margin-inline: 10px;
-          color: aliceblue; }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    color: #141414;
+    flex-flow: wrap;
+    font-family: Open sans,sans-serif; }
+    header nav nav a {
+      text-decoration: none;
+      margin-inline: 10px;
+      color: aliceblue; }
 
 .grid {
   display: grid;
-  grid-template-areas: "header header header" "mbgrid mbgrid turnomb" "mbgrid mbrid turnomb" "consejosmb consejosmb turnomb" "footer footer footer";
-  align-content: stretch; }
+  grid-template-areas: "header header header" "mbgrid mbgrid turnomb" "mbgrid mbrid turnomb" "consejosmb consejosmb consejosmb" "footer footer footer"; }
   .grid .mbgrid {
     grid-area: mbgrid;
     background: black; }
     .grid .mbgrid .turnomb {
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       padding: 20px;
-      grid-area: turno;
+      grid-area: turnomb;
       background: black; }
-      .grid .mbgrid .turnomb .consejosmb {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      .grid .mbgrid .turnomb .consejos {
+        text-align: center;
         padding: 20px;
-        grid-area: consejos;
-        background: black; }
+        box-shadow: black;
+        font-size: 3rem; }
+        .grid .mbgrid .turnomb .consejos .consejosmb {
+          justify-content: center;
+          padding: 20px;
+          margin: 0px;
+          grid-area: consejosmb;
+          font-size: 2rem;
+          background: black; }
+          .grid .mbgrid .turnomb .consejos .consejosmb footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px;
+            margin: 0px;
+            grid-area: footer;
+            background: black;
+            font-family: Open sans,sans-serif; }
 
 /*gridmercedesebenz*/
 .contenedormb {
@@ -57,81 +61,70 @@ header {
   align-content: stretch; }
   .contenedormb .unidades {
     text-align: center;
-    width: 1300px;
-    align-self: center;
     padding: 20px;
-    box-shadow: #141414;
     font-size: 2rem;
     margin: 15px; }
     .contenedormb .unidades .postventas {
       grid-area: postventas;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       padding: 20px;
       background: black; }
       .contenedormb .unidades .postventas .autosgrid {
         grid-area: autosgrid;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         padding: 20px;
         background: black; }
         .contenedormb .unidades .postventas .autosgrid .vansgrid {
           grid-area: vansgrid;
-          display: flex;
-          flex-direction: column;
           justify-content: center;
-          padding: 20px;
-          background: black; }
+          padding: 20px; }
           .contenedormb .unidades .postventas .autosgrid .vansgrid .camionesgrid {
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             padding: 20px;
             background: black;
             grid-area: camionesgrid; }
 
-/*gridmopar*/
+/*grid mopar*/
 .contenedormopar {
   display: grid;
-  grid-template-areas: "header header header" "consultasgd consultasgd consultasgd" "jeepgd jeepgd dodgegd" "chryslergd chryslergd ramgd" "footer footer footer";
-  align-content: stretch; }
+  grid-template-areas: "header header header" "consultasgd consultasgd consultasgd" "mantenimiento mantenimiento  mantenimiento" "jeepgd jeepgd chrysler" "dodge dodge ram" "footer footer footer";
+  align-content: stretch;
+  display: flex;
+  flex-direction: column; }
   .contenedormopar .consultasgd {
     grid-area: consultasgd;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black; }
-    .contenedormopar .consultasgd .jeepgd {
-      grid-area: jeepgd;
-      display: flex;
-      flex-direction: column;
+    .contenedormopar .consultasgd .mantenimiento {
+      grid-area: mantenimiento;
       justify-content: center;
       padding: 20px;
       background: black; }
-      .contenedormopar .consultasgd .jeepgd .dodgegd {
-        grid-area: dodgegd;
-        display: flex;
-        flex-direction: column;
+      .contenedormopar .consultasgd .mantenimiento .jeepgd {
+        grid-area: jeepgd;
         justify-content: center;
-        padding: 20px;
-        background: black; }
-        .contenedormopar .consultasgd .jeepgd .dodgegd .chryslergd {
-          grid-area: chryslergd;
-          display: flex;
-          flex-direction: column;
+        padding: 30px;
+        background: black;
+        margin: 0px; }
+        .contenedormopar .consultasgd .mantenimiento .jeepgd .dodge {
+          grid-area: dodge;
           justify-content: center;
-          padding: 20px;
-          background: black; }
-          .contenedormopar .consultasgd .jeepgd .dodgegd .chryslergd .ramgd {
-            grid-area: ramgd;
-            display: flex;
-            flex-direction: column;
+          padding: 30px;
+          background: black;
+          margin: 0px; }
+          .contenedormopar .consultasgd .mantenimiento .jeepgd .dodge .chrysler {
+            grid-area: chrysler;
             justify-content: center;
-            padding: 20px;
-            background: black; }
+            padding: 30px;
+            background: black;
+            margin: 0px; }
+            .contenedormopar .consultasgd .mantenimiento .jeepgd .dodge .chrysler .ram {
+              grid-area: ram;
+              justify-content: center;
+              padding: 30px;
+              background: black;
+              margin: 0px; }
 
 /*grid conctacto*/
 .contenedorcontacto {
@@ -148,14 +141,13 @@ header {
 footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  color: white;
-  background-color: black;
-  padding: 30px;
+  padding: 20px;
   margin: 0px;
   grid-area: footer;
   background: black;
-  font-family: Corporate A BQ Light,Open sans,sans-serif; }
+  font-family: Open sans,sans-serif; }
   footer ul {
     list-style-type: none; }
     footer ul .direccion {

@@ -4,28 +4,46 @@
     "header header header"
     "mbgrid mbgrid turnomb"
     "mbgrid mbrid turnomb"
-    "consejosmb consejosmb turnomb"
+    "consejosmb consejosmb consejosmb"
     "footer footer footer";
-    align-content: stretch;
 
-    .mbgrid {
-        grid-area: mbgrid;
-        background:black;
-        .turnomb {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
-            grid-area: turno;
-            background: black;
-            .consejosmb {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 20px;
-                grid-area: consejos;
-                background: black;
-            }
+.mbgrid {
+    grid-area: mbgrid;
+    background:black;
+
+.turnomb {
+    justify-content: center;
+    padding: 20px;
+    grid-area: turnomb;
+    background: black;
+
+.consejos {
+    text-align: center;
+    padding: 20px;
+    box-shadow: black;
+    font-size: 3rem;
+
+.consejosmb {
+    justify-content: center;
+    padding: 20px;
+    margin: 0px;
+    grid-area: consejosmb;
+    font-size: 2rem;
+    background: black;
+
+footer {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 0px;
+    grid-area: footer;
+    background: black;
+    font-family: Open sans,sans-serif;
+                    }
+                }   
+            }   
         }
     }
 }
@@ -42,108 +60,104 @@
 
 .unidades {
     text-align: center;
-    width: 1300px;;
-    align-self: center;
     padding: 20px;
-    box-shadow: #141414;
     font-size: 2rem;
     margin: 15px;
     
 
 .postventas{
     grid-area: postventas;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
 
 .autosgrid{
     grid-area: autosgrid;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
 
 .vansgrid{
     grid-area: vansgrid;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
-    background: black;
-
+ 
 .camionesgrid{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
     grid-area: camionesgrid;
-      }
-     }
+                    }
+                }
+            }
+        }   
     }
-   }
-  }
- }
-/*gridmopar*/
-.contenedormopar {
+}
+ /*grid mopar*/
+ .contenedormopar {
     display: grid;
     grid-template-areas: 
     "header header header"
     "consultasgd consultasgd consultasgd"
-    "jeepgd jeepgd dodgegd"
-    "chryslergd chryslergd ramgd"
+    "mantenimiento mantenimiento  mantenimiento"
+    "jeepgd jeepgd chrysler"
+    "dodge dodge ram"
     "footer footer footer";
     align-content: stretch;
+    display: flex;
+    flex-direction:column;
 
 
 .consultasgd{
     grid-area: consultasgd;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
+
+.mantenimiento {
+    grid-area: mantenimiento;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
 
 .jeepgd{
     grid-area: jeepgd;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
+    margin: 0px;
 
-.dodgegd{
-    grid-area: dodgegd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background: black;
 
-.chryslergd {
-    grid-area: chryslergd;
-    display: flex;
-    flex-direction: column;
+.dodge{
+    grid-area: dodge;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
+    margin: 0px;
 
-.ramgd{
-    grid-area: ramgd;
-    display: flex;
-    flex-direction: column;
+.chrysler{
+    grid-area: chrysler;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
-     }  
-    } 
-   }
-  } 
+    margin: 0px;
+
+.ram{
+    grid-area: ram;
+    justify-content: center;
+    padding: 30px;
+    background: black;
+    margin: 0px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
  }
-}
+
+
 /*grid conctacto*/
 .contenedorcontacto {
     display: grid;

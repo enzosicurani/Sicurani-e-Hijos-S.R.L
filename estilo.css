@@ -198,7 +198,7 @@ h2 {
     "footer footer footer";
     align-content: stretch;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .consultasgd{

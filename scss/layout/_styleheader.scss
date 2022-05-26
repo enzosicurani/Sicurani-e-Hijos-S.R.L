@@ -4,31 +4,24 @@ header {
     background-size: 40%; 
     padding: 20px;
     margin: 0%;
-    font-family: Corporate A BQ Light,Open sans,sans-serif;
-    .direccion{
-        text-align: right;
-        text-transform: capitalize;
-        font-size: 15px;
-        .empresa {
-        text-transform: capitalize;
-        font-size: 40px;
-        padding: 15px;
-        margin: 15px;    
-            nav {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: left;
-                align-items: center;
-                font-size: 2rem;
-                color: #141414;
-                flex-flow: wrap;
-                a {
-                    text-decoration: none;
-                    margin-inline: 10px;
-                    color:aliceblue;
-                }
+    font-family:  Corporate A BQ Light,Open sans,sans-serif;
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    color: #141414;
+    flex-flow: wrap;
+    font-family: Open sans,sans-serif ;
+
+nav a {
+    text-decoration: none;
+    margin-inline: 10px;
+    color:aliceblue;
             }
         }
     }
-}
+                  
