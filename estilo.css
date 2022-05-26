@@ -193,10 +193,10 @@ h2 {
     "header header header"
     "consultasgd consultasgd consultasgd"
     "mantenimiento mantenimiento  mantenimiento"
-    "jeepgd jeepgd jeepgd"
+    "jeepgd jeepgd chrysler"
+    "dodge dodge ram"
     "footer footer footer";
     align-content: stretch;
-    display: flex;
     display: list-item;
 }
 
@@ -220,6 +220,29 @@ h2 {
     background: black;
     margin: 0px;
 }
+
+.dodge{
+    grid-area: dodge;
+    justify-content: center;
+    padding: 30px;
+    background: black;
+    margin: 0px;
+}
+.chrysler{
+    grid-area: chrysler;
+    justify-content: center;
+    padding: 30px;
+    background: black;
+    margin: 0px;
+}
+.ram{
+    grid-area: ram;
+    justify-content: center;
+    padding: 30px;
+    background: black;
+    margin: 0px;
+}
+
 
 /*imagenes*/
 img {
