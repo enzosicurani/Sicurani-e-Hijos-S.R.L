@@ -42,73 +42,56 @@ body {
     "mbgrid mbrid turnomb"
     "consejosmb consejosmb consejosmb"
     "footer footer footer";
-    align-content: stretch;
 }
 .marcas {
     text-align: center;
-    width: 1300px;;
-    align-self: center;
     padding: 20px;
-    box-shadow: #141414;
     font-size: 2rem;
     margin: 15px;
-    text-decoration: none;
 }
 .mbgrid {
     grid-area: mbgrid;
     background:black;
-    margin: 20px;
-    padding: 20px;
 }
 .turno {
     text-align: center;
     width: auto;
-    justify-content: center;
-    align-self: center;
     padding: 20px;
     box-shadow: #141414;
     font-size: 2rem;
-    margin: 15px;
 }
 .turnomb {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
-    grid-area: turno;
+    grid-area: turnomb;
     background: black;
 }
 .consejos {
     text-align: center;
-    width: auto;
-    justify-content: center;
-    align-self: center;
     padding: 20px;
     box-shadow: black;
     font-size: 3rem;
-    margin: 15px;
 }
 .consejosmb {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
-    grid-area: consejos;
+    margin: 0px;
+    grid-area: consejosmb;
     font-size: 2rem;
     background: black;
 }
 footer {
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    color: white;
-    background-color: black;
-    padding: 30px;
+    padding: 20px;
     margin: 0px;
     grid-area: footer;
     background: black;
     font-family: Open sans,sans-serif;
 }
+
 ul {
     list-style-type: none;
 }
@@ -159,43 +142,30 @@ h2 {
 }
 .unidades {
     text-align: center;
-    width: 1300px;;
-    align-self: center;
     padding: 20px;
-    box-shadow: #141414;
     font-size: 2rem;
     margin: 15px;
     
 }
-
 .postventas{
     grid-area: postventas;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
 }
 .autosgrid{
     grid-area: autosgrid;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
-
 }
 .vansgrid{
     grid-area: vansgrid;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
 }
 .camionesgrid{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
@@ -216,111 +186,41 @@ h2 {
     margin-bottom: 50px;
 }
 
-
-@media (max-width: 768px) {
-    .contenedormb { grid-template-areas: 
-        "header header header"
-        "postventas postventas vansgrid"
-        "autosgrid autosbrid vansgrid"
-        "camionesgrid camionesgrid camionesgrid"
-        "footer footer footer";}
-    .header {
-        flex-wrap: wrap;
-    }
-    .postventas {
-        flex-wrap: wrap;
-    }
-    .autosgrid{
-        flex-wrap: wrap;
-    }
-    .vansgrid{
-        flex-wrap: wrap;
-    }
-    .camionesgrid{
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-}
-}
-@media (max-width: 368px) {
-    .contenedormb { grid-template-areas: 
-        "header header header"
-        "postventas postventas vansgrid"
-        "autosgrid autosbrid vansgrid"
-        "camionesgrid camionesgrid camionesgrid"
-        "footer footer footer";}
-    .header {
-        flex-wrap: wrap;
-    }
-    .postventas {
-        flex-wrap: wrap;
-    }
-    .autosgrid{
-        flex-wrap: wrap;
-    }
-    .vansgrid{
-        flex-wrap: wrap;
-    }
-    .camionesgrid{
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-    }
-}
 /*mopar*/
 .contenedormopar {
     display: grid;
     grid-template-areas: 
     "header header header"
     "consultasgd consultasgd consultasgd"
-    "jeepgd jeepgd dodgegd"
-    "chryslergd chryslergd ramgd"
+    "mantenimiento mantenimiento  mantenimiento"
+    "jeepgd jeepgd jeepgd"
     "footer footer footer";
     align-content: stretch;
+    display: flex;
+    display: list-item;
 }
 
 .consultasgd{
     grid-area: consultasgd;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 20px;
     background: black;
+}
+.mantenimiento {
+    grid-area: mantenimiento;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+
 }
 .jeepgd{
     grid-area: jeepgd;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
+    margin: 0px;
 }
-.dodgegd{
-    grid-area: dodgegd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background: black;
-}
-.chryslergd {
-    grid-area: chryslergd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background: black;
-}
-.ramgd{
-    grid-area: ramgd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background: black;
-}
+
 /*imagenes*/
 img {
     max-width: 100%;
@@ -338,6 +238,7 @@ img {
     width: 900px;
     display: block;
     margin: 0px auto;
+    padding: 10px;
 }
 .logo {
     height: 150px;
@@ -365,61 +266,12 @@ img {
 }
 .textoqs {
     text-align: center;
-    margin: 5px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 15px;
     
 }
 
-
-    @media (max-width: 768px) {
-    .grid {
-    grid-template-areas:
-    "header header header"
-    "mbgrid mbgrid turnomb"
-    "mbgrid mbrid turnomb"
-    "consejosmb consejosmb turnomb"
-    "footer footer footer";
-    }
-    .header {
-        flex-wrap: wrap;
-    }
-    .mbgrid {
-        flex-wrap: wrap;
-    }
-    .turno {
-        flex-wrap: wrap;
-    }
-    .consejos {
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-    }
-}
-@media (max-width: 368px) {
-    .grid {
-    grid-template-areas:
-    "header header header"
-    "mbgrid mbgrid turnomb"
-    "mbgrid mbrid turnomb"
-    "consejosmb consejosmb turnomb"
-    "footer footer footer";
-    }
-    .header {
-        flex-wrap: wrap;
-    }
-    .mbgrid {
-        flex-wrap: wrap;
-    }
-    .turno {
-        flex-wrap: wrap;
-    }
-    .consejos {
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-    }
-}
 /*pagina contacto*/
 
 .infocontacto {
@@ -445,40 +297,4 @@ h4 {
 }
 .formulario {
     grid-area: formulario;
-}
-@media (max-width: 768px) {
-    .contenedorcontacto {
-    grid-template-areas:
-    "header header header"
-    "infodecontacto formulario formulario"
-    "infodecontacto formulario formulario"
-    "footer footer footer";
-    }
-    .infodecontacto {
-        flex-wrap: wrap;
-    }
-    .formulario{
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-    }
-}
-@media (max-width: 368px) {
-    .contenedorcontacto {
-    grid-template-areas
-    :"header header header"
-    "infodecontacto formulario formulario"
-    "infodecontacto formulario formulario"
-    "footer footer footer"
-    }
-    .infodecontacto {
-        flex-wrap: wrap;
-    }
-    .formulario{
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-    }
 }
