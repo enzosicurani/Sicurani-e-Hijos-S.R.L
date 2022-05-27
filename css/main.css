@@ -58,26 +58,33 @@ header {
 .contenedormb {
   display: grid;
   grid-template-areas: "header header header" "postventas postventas vansgrid" "autosgrid autosbrid vansgrid" "camionesgrid camionesgrid camionesgrid" "footer footer footer";
-  align-content: stretch; }
+  align-content: stretch;
+  display: flex;
+  flex-direction: column; }
   .contenedormb .postventas {
     grid-area: postventas;
     justify-content: center;
-    padding: 20px;
-    background: black; }
+    padding: 30px;
+    background: black;
+    margin: 0px; }
     .contenedormb .postventas .autosgrid {
       grid-area: autosgrid;
       justify-content: center;
-      padding: 20px;
-      background: black; }
+      padding: 30px;
+      background: black;
+      margin: 0px; }
       .contenedormb .postventas .autosgrid .vansgrid {
         grid-area: vansgrid;
         justify-content: center;
-        padding: 20px; }
-        .contenedormb .postventas .autosgrid .vansgrid .camionesgrid {
-          justify-content: center;
-          padding: 20px;
-          background: black;
-          grid-area: camionesgrid; }
+        padding: 30px;
+        background: black;
+        margin: 0px; }
+      .contenedormb .postventas .autosgrid .camionesgrid {
+        justify-content: center;
+        padding: 30px;
+        background: black;
+        margin: 0px;
+        grid-area: camionesgrid; }
 
 /*grid mopar*/
 .contenedormopar {

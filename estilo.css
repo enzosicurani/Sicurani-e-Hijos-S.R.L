@@ -306,7 +306,10 @@ h4 {
     "infodecontacto formulario formulario"
     "footer footer footer";     
     align-items: stretch; 
-}.infodecontacto {
+    display: flex;
+    flex-direction: column;
+}
+.infodecontacto {
     padding: 10px;
     margin: 20px;
     grid-area: infodecontacto;
