@@ -139,6 +139,8 @@ h2 {
     "camionesgrid camionesgrid camionesgrid"
     "footer footer footer";
     align-content: stretch;
+    display: flex;
+    flex-direction: column;
 }
 .unidades {
     text-align: center;
@@ -150,40 +152,30 @@ h2 {
 .postventas{
     grid-area: postventas;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
+    margin: 0px;
 }
 .autosgrid{
     grid-area: autosgrid;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
+    margin: 0px;
 }
 .vansgrid{
     grid-area: vansgrid;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background: black;
+    margin: 0px;
 }
 .camionesgrid{
     justify-content: center;
-    padding: 20px;
-    background: black;
-    grid-area: camionesgrid;
-}
-
-.mejoresmanos {
-    font-size: 30px;
-    text-align: left;
-    margin-left: 100px;  
     padding: 30px;
-}
-.textomantenimiento {
-    font-size: 20px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
+    background: black;
+    margin: 0px;
+    grid-area: camionesgrid;
 }
 
 /*mopar*/
